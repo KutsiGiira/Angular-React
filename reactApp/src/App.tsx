@@ -14,12 +14,16 @@
 //     );
 // }
 
+import { useState } from "react";
 import Button from "./components/Button";
+import Alert from "./components/Alert";
 
 function App(){
+    const [Vis, setVis] = useState(false);
     return (
         <div> 
-        <Button inj="testing"></Button>
+            <Alert></Alert>
+        {/* <Button onClick={() => setVis(true)}></Button> */}
         </div>
     );
 }

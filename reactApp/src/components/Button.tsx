@@ -1,10 +1,9 @@
-interface txt{
-    inj : string;
-    color? : string;
-}
-export const Button = ({inj , color = "success"}: txt) => {
+
+export const Button = () => {
   return (
-    <button className={'btn btn-' + color}>{inj}</button>
+    <div>
+    <button className='btn btn-success'>click</button>
+    </div>
   )
 }
 export default Button
