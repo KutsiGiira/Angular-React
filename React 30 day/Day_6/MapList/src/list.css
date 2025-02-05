@@ -1,0 +1,41 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+.cont{
+    width: 60%;
+    height: fit-content;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap:2px;
+    flex-wrap: wrap;
+}
+li{
+    /* padding: 53px 60px; */
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.even{
+    background-color: rgb(4, 185, 4);
+}
+
+.odd{
+    background-color: yellow;
+}
+.prime{
+    background-color: red;
+}
+.title{
+    text-align: center;
+}
