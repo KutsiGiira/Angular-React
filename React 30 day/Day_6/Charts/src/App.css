@@ -1,0 +1,12 @@
+header{
+  text-align: center;
+  font-size: large;
+}
+header h2, h6{
+  font-weight: lighter;
+}
+.inside{
+  margin:auto;
+  font-weight: bold;
+  color:black;
+}
