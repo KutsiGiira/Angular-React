@@ -17,9 +17,13 @@ header{
 footer{
   width: 100vw;
   text-align: center;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   grid-area: 3 / 1 / 4 / 2;
   /* background-color: aqua; */
+}
+footer p {
+  top:40%;
+  position: relative;
 }
 .body{
   grid-area: 2 / 1 / 3 / 2;

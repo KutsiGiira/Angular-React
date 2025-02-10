@@ -15,7 +15,7 @@ function Header({style}){
 function Footer({style}){
   return(
     <footer style={style}>
-      <div>Made by author</div>
+      <p>Made by author</p>
     </footer>
   )
 }
@@ -39,5 +39,4 @@ function theme(){
     </div>
   )
 }
-
 export default App
