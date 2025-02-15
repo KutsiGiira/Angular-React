@@ -1,0 +1,20 @@
+.News{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.Side{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.Big img {
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+}

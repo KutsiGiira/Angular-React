@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: white 1px solid;
+    max-height: 70px;
+    min-height: 70px;
+    position: sticky;
+    top: 0px;
+}
+.search{
+    width: 80%;
+    height: 25%;
+    border-radius: 20px;
+    background-color: transparent;
+    border: violet 1px solid;
+}
+.LS, .PN {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.LS{
+    width: 40%;
+}
+.PN{
+    width: 20%;
+}
