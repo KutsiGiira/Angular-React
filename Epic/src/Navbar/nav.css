@@ -8,6 +8,7 @@
     position: sticky;
     top: 0px;
     background-color: #021526;
+    z-index: 2;
 }
 a{
     color: white;
