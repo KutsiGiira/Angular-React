@@ -12,9 +12,30 @@
     flex-direction: column;
     gap: 16px;
 }
+img{
+    border-radius: 10px; 
+}
 .Big img {
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;   
+    background-position: center;
+    border-radius: 20px;  
 }
+
+.timer {
+    height: 100%;
+    width: 0;
+    background-color: pink;
+    animation: fill 3s linear forwards;
+    z-index: 1;
+  }
+  
+  @keyframes fill {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }

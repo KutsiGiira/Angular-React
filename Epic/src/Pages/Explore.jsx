@@ -17,13 +17,13 @@ function Explore(){
         <div>
             <div className='News'>
                 <div className='Big'>
-                    <img src={Pics[Image]} width="1100" height="700"/>
+                    <img src={Pics[Image]} width="1200" height="700" />
                 </div>
                     <div className='Side'>
-                    <img src={Pics[0]} width="300"/>
+                    <img src={Pics[0]} width="300" />
                     <img src={Pics[1]} width="300" />
                     <img src={Pics[2]} width="300" />
-                    <img src= {Pics[3]} width="300" /> 
+                    <img src= {Pics[3]} width="300" />
                 </div>
             </div>
         </div>

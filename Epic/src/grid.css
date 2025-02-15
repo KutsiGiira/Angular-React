@@ -10,6 +10,3 @@
     min-height: 150vh;
     max-height: fit-content;
 }
-.routes.active{
-    color: pink;
-}
