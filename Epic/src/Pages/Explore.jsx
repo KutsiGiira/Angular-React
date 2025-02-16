@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import Slider from "react-slick";
+import { useNavigate } from "react-router-dom";
+// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick-theme.css";
 import elden from '../Pictures/elden.jpg'
 import plague from '../Pictures/plague.jpg'
 import vampyr from '../Pictures/vampyr.jpg'
@@ -23,6 +27,7 @@ import tsushima from '../Pictures/tshuchima.jpg'
 import witcher from '../Pictures/witcher.jpg'
 import zelda from '../Pictures/zelda.jpg'
 import './Explore.css'
+import Slide from './Slide';
 
 function Explore(){
     const Pics = [
@@ -60,6 +65,14 @@ function Explore(){
         }, 3000);
         return () => clearInterval(timer);
     }, []);
+    const t = <p>Best</p>
+    const souls = [
+        {name:"vampyr", price:"30"},
+        {name:"dark souls", price:"30"},
+        {name:"elden ring", price:"30"},
+        {name:"sekiro", price:"30"}
+    ]
+    const navigate = useNavigate();
     return(
         <div>
             <div className='News'>
@@ -75,7 +88,7 @@ function Explore(){
                     </div>
                 </div>
                     <div className='Side'>
-                    {Pics.map((pic, index) => (
+                        {Pics.map((pic, index) => (
                         <img 
                             key={index} 
                             src={pic.src} 
@@ -86,20 +99,37 @@ function Explore(){
                 </div>
             </div>
             <div className='more'>
-                <span id='sub'>{"Discover more >"}</span>
+                <span id='sub'>{"Best Of All The Time"}</span>
                 <div className='cont'>
-                    {cards.map((c, index) => (
-                    <div id="cont">    
-                        <img
-                            key={index}
-                             src={c.src} 
-                             width="220"
-                             height="300"
-                            />
-                            <span>{c.name}</span>
-                            <span>{c.price}</span>
+                    <div className='p'>
+                        <h2>Best Action-Adventure</h2>
+                        <ul className="ul">
+                            <li >Red Dead Redemption</li>
+                            <li>Assassin's Creed</li>
+                            <li>God of War</li>
+                            <li>Horizon Zero Dawn</li>
+                        </ul>
                     </div>
-                    ))}
+                    <div className='pp'>
+                    <h2>Best RPG</h2>
+                    <ul className="ul">
+                            <li>The Witcher 3</li>
+                            <li>Cyberpunk 2077</li>
+                            <li>Fallout 4</li>
+                            <li>Final Fantasy VII Remake</li>
+                        </ul>
+                    </div>
+                    <div className='ppp'>
+                    <h2>Best Soulslike</h2>
+                    
+                    <ul className="ul">
+                    {souls.map((s, index) => (
+          <li key={index} onClick={() => navigate(`/explore/${s.name}`)} style={{ cursor: "pointer" }}>
+            {s.name}
+          </li>
+        ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

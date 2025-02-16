@@ -66,27 +66,32 @@ img{
   background-color: transparent;
   border: #ffffff65 1px solid;
 }
-
+.more{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: red 1px solid;
+}
 .more #sub{
   color: #021526;
-  font-weight: bolder;
-  font-size: xx-large;
+  font-weight: bold;
+  font-size: large;
   margin: 0px 12%;
   text-decoration: underline;
 }
 .cont{
   display: flex;
-  overflow: hidden;
-  gap: 20px;
-  border: red 1px solid;
   height:400px;
+  justify-content: space-evenly;
   align-items: center;
+border: green solid 1px;
+  gap: 30px;
 }
-#cont{
+/* .contain{
   display: flex;
   flex-direction: column;
-}
-#cont:hover{
+} 
+.contain:hover{
   -moz-transform: scale(1.2);
 -webkit-transform: scale(1.2);
 -o-transform: scale(1.2);
@@ -94,10 +99,20 @@ img{
 transform: scale(1.2);
 min-height: fit-content;
 cursor: pointer;
+} */
+.p, .pp, .ppp{
+  width: 20%;
+  height:85%;
 }
 
-
-
+.ul{
+  display: flex;
+  flex-direction: column;
+}
+.ul > li{
+  list-style: disc;
+  margin-left: 40px;
+}
 
 
 
