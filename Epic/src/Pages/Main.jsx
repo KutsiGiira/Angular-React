@@ -3,10 +3,12 @@ import Cart from "./Cart";
 import Wishlist from "./Wishlist";
 import Layout from "./Layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "../Scroll";
 function Main(){
     return(
         <>
             <BrowserRouter>
+            <ScrollToTop />
                 <Routes>
                     <Route index element={<Explore />}></Route>
                     <Route path="/explore" element={<Explore />} className="routes" activeClassName="active"></Route>

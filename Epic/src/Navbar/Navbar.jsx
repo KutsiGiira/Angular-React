@@ -6,7 +6,6 @@ function Navbar(){
     ];
     
     const [name, setName] = useState("");
-    console.log(name)
     const filteredGames = games.filter(game =>
         game.name.includes(name)
     );
@@ -19,17 +18,6 @@ function Navbar(){
             <div className="PN">
             <a href="/wishlist">wishlist</a>
             <a href="/cart">cart</a>
-            </div>
-            <div className="filtered-games">
-                {filteredGames.length > 0 ? (
-                    filteredGames.map((game, index) => (
-                        <div key={index} className="game-item">
-                            <span>{game.name}</span> - <span>{game.price}</span>
-                        </div>
-                    ))
-                ) : (
-                    <p>No games found</p>
-                )}
             </div>
         </div>
     )

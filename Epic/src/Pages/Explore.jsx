@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
 import { useNavigate } from "react-router-dom";
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css";
 import elden from '../Pictures/elden.jpg'
 import plague from '../Pictures/plague.jpg'
 import vampyr from '../Pictures/vampyr.jpg'
@@ -27,13 +25,11 @@ import tsushima from '../Pictures/tshuchima.jpg'
 import witcher from '../Pictures/witcher.jpg'
 import zelda from '../Pictures/zelda.jpg'
 import './Explore.css'
-import Slide from './Slide';
-
 function Explore(){
     const Pics = [
-        { src: elden, name: "Elden Ring", genre: '"Souls-like", "Open World", "Dark Fantasy", "RPG"' },
+        { src: elden, name: "elden", genre: '"Souls-like", "Open World", "Dark Fantasy", "RPG"' },
         { src: sekiro, name: "Sekiro", genre: '"Souls-like", "Action", "Adventure", "Stealth"' },
-        { src: vampyr, name: "Vampyr", genre: '"RPG", "Vampire", "Dark Fantasy", "Narrative-Driven"' },
+        { src: vampyr, name: "vampyr", genre: '"RPG", "Vampire", "Dark Fantasy", "Narrative-Driven"' },
         { src: plague, name: "A Plague Tale", genre: '"Adventure", "Stealth", "Story-Driven", "Historical"' }
     
     ];
@@ -65,24 +61,36 @@ function Explore(){
         }, 3000);
         return () => clearInterval(timer);
     }, []);
-    const t = <p>Best</p>
     const souls = [
         {name:"vampyr", price:"30"},
         {name:"dark souls", price:"30"},
-        {name:"elden ring", price:"30"},
+        {name:"elden    ", price:"30"},
         {name:"sekiro", price:"30"}
+    ]
+    const rpg = [
+        {name:"The Witcher 3", price:"30"},
+        {name:"Cyberpunk 2077", price:"30"},
+        {name:"Fallout 4", price:"30"},
+        {name:"Final Fantasy VII Remake", price:"30"}
+    ]
+    const action = [
+        {name:"Red Dead Redemption", price:"30"},
+        {name:"Assassin's Creed", price:"30"},
+        {name:"God of War", price:"30"},
+        {name:"Horizon Zero Dawn", price:"30"}
     ]
     const navigate = useNavigate();
     return(
-        <div>
+        
+        <div id="main">
             <div className='News'>
                 <div className='Big'>
-                    <img src={Pics[Image].src} width="1200" height="700" />
+                    <img src={Pics[Image].src} width="1200" height="700" onClick={() => navigate(`/explore/${Pics[Image].name}`)}/>
                     <div className="card">
                         <span id="title">{Pics[Image].name}</span><br></br>
                         <span id="cat"><span id="genre">Genre :</span>{Pics[Image].genre}</span>
                         <div className='btns'>
-                            <button id="add"> + Add to Wishlist</button>
+                            <button id="add" > + Add to Wishlist</button>
                             <button id='cart'>Add to cart</button>
                         </div>
                     </div>
@@ -93,7 +101,7 @@ function Explore(){
                             key={index} 
                             src={pic.src} 
                             width="300" 
-                            onClick={() => SetImage(index)} 
+                            onClick={() => {SetImage(index); navigate(`/explore/${pic.name}`);}}
                         />
                     ))}
                 </div>
@@ -104,24 +112,24 @@ function Explore(){
                     <div className='p'>
                         <h2>Best Action-Adventure</h2>
                         <ul className="ul">
-                            <li >Red Dead Redemption</li>
-                            <li>Assassin's Creed</li>
-                            <li>God of War</li>
-                            <li>Horizon Zero Dawn</li>
+                            {action.map((a, index) => (<li key={index} onClick={() => navigate(`/explore/${a.name}`)}  style={{ cursor: "pointer" }}>
+                                {a.name}
+                            </li>
+                            ))}
                         </ul>
                     </div>
                     <div className='pp'>
                     <h2>Best RPG</h2>
                     <ul className="ul">
-                            <li>The Witcher 3</li>
-                            <li>Cyberpunk 2077</li>
-                            <li>Fallout 4</li>
-                            <li>Final Fantasy VII Remake</li>
+                    {rpg.map((r, index) => (
+          <li key={index} onClick={() => navigate(`/explore/${r.name}`)} style={{ cursor: "pointer" }}>
+            {r.name}
+          </li>
+            ))}
                         </ul>
                     </div>
                     <div className='ppp'>
                     <h2>Best Soulslike</h2>
-                    
                     <ul className="ul">
                     {souls.map((s, index) => (
           <li key={index} onClick={() => navigate(`/explore/${s.name}`)} style={{ cursor: "pointer" }}>
