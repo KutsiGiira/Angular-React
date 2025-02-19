@@ -137,7 +137,7 @@ function Layout(){
     const game = gameData[gameName];
     if (!game) return <h2>Game Not Found</h2>;
     return (
-      <main>
+      <main className="main">
       <div className="holder">
       <div className="g">
         <img src={game.src} alt={gameName} width="350" height="450"className="Lpic" />

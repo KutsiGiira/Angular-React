@@ -1,0 +1,20 @@
+.div{
+    border: red solid 1px;
+}
+.hov:hover{
+    -moz-transform: scale(1.1) translate(0px, -9px);
+    -webkit-transform: scale(1.1) translate(0px, -9px);
+    -o-transform: scale(1.1) translate(0px, -9px);
+    -ms-transform: scale(1.1) translate(0px, -9px);
+    transform: scale(1.1) translate(0px, -9px);
+    cursor: pointer;
+}
+.hov{
+    max-height:fit-content ;
+    border: green 1px solid;
+    height: 10%;
+    padding: 20px;
+}
+#imghold{
+    background-color: yellow;
+}

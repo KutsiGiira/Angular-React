@@ -1,3 +1,5 @@
+
+
 .btts button{
     padding: 20px;
     border: transparent;
@@ -44,6 +46,12 @@
     border: blue 1px solid;
     position: absolute;
     width: 99vw;
+    height: fit-content;
     left: 50%;
+    display: flex;
+    flex-direction: column;
     transform:translateX(-50%);
+    margin-top: 25px;
+    padding: 25px;
+    gap: 20px;
   }

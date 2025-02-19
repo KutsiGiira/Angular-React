@@ -33,27 +33,6 @@ function Explore(){
         { src: plague, name: "A Plague Tale", genre: '"Adventure", "Stealth", "Story-Driven", "Historical"' }
     
     ];
-    const cards = [
-        { src:rrd,name: "Red Dead Redemption", price: "$59.99" },
-        { src:witcher,name: "The Witcher 3", price: "$39.99" },
-        { src:ass,name: "Assassin's Creed", price: "$49.99" },
-        { src:gow,name: "God of War", price: "$39.99" },
-        { src:horizon,name: "Horizon Zero Dawn", price: "$29.99" },
-        { src:gta,name: "Grand Thief Auto 5", price: "$39.99" },
-        { src:farr,name: "Far Cry 5", price: "$29.99" },
-        { src:cp,name: "Cyberpunk 2077", price: "$59.99" },
-        { src:fallout,name: "Fallout 4", price: "$19.99" },
-        { src:rs,name: "Resident Evil 7", price: "$59.99" },
-        { src:ds,name: "Dark Souls 3", price: "$29.99" },
-        { src:death,name: "Death Stranding", price: "$39.99" },
-        { src:zelda,name: "The Legend of Zelda: Breath of the Wild", price: "$59.99" },
-        { src:metro,name: "Metro Exodus", price: "$49.99" },
-        { src:monster,name: "Monster Hunter: World", price: "$39.99" },
-        { src:final,name: "Final Fantasy VII Remake", price: "$59.99" },
-        { src:control,name: "Control", price: "$39.99" },
-        { src:last,name: "The Last of Us Part II", price: "$59.99" },
-        { src:tsushima,name: "Ghost of Tsushima", price: "$59.99" }
-    ];
     const [Image , SetImage] = useState(0);
     useEffect(() => {
         const timer = setInterval(() => {
