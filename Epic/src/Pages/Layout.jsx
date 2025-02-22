@@ -22,6 +22,7 @@ import monster from '../Pictures/monster.jpg'
 import rs from '../Pictures/rs.jpg'
 import tsushima from '../Pictures/tshuchima.jpg'
 import witcher from '../Pictures/witcher.jpg'
+import sifu from '../Pictures/Sifu.jpg'
 import zelda from '../Pictures/zelda.jpg'
 import { useParams } from "react-router-dom";
 import './layout.css'
@@ -43,7 +44,7 @@ const gameData = {
         summary: "Dark Souls is known for its challenging combat, atmospheric storytelling, and unforgiving difficulty. Players venture through a dark, interconnected world battling enemies and bosses.",
         globalRating: "89*"
     },
-    "elden": { 
+    "Elden Ring": { 
         src: elden, 
         price: "30", 
         genre: "Open-World, Action RPG, Souls-like", 
@@ -129,7 +130,95 @@ const gameData = {
     genre: "Action-Adventure, Stealth, Story-Rich", 
     releaseDate: "October 18, 2019", 
     summary: "In A Plague Tale: Innocence, players control Amicia and her younger brother Hugo as they navigate a brutal, plague-infested medieval France while uncovering dark secrets.",
-    globalRating: "84/100"
+    globalRating: "84*"
+},
+"Grand Thift Auto 5": {
+    src: gta,
+    price: "90",
+    genre: "Action-Adventure, Open-World, Crime",
+    releaseDate: "September 17, 2013",
+    summary: "GTA is an open-world action series where players engage in crime-driven stories, exploring vast cities, completing missions, and causing chaos.",
+    globalRating: "97*"
+  },
+  "Far Cry 5": {
+    src: farr,
+    price: "90",
+    genre: "First-Person Shooter, Open-World, Action-Adventure",
+    releaseDate: "October 7, 2021",
+    summary: "Far Cry is a series of open-world FPS games known for their exotic settings, intense gunplay, and compelling antagonists.",
+    globalRating: "75*"
+  },
+  "Resident Evil 7": {
+    src: rs,
+    price: "90",
+    genre: "Survival Horror, Action, Third-Person Shooter",
+    releaseDate: "90March 24, 2023",
+    summary: "Resident Evil is a horror-survival franchise where players battle against zombies and bio-organic threats in intense, suspenseful gameplay.",
+    globalRating: "93*"
+  },
+  "Dark Souls 3": {
+    src: ds,
+    price: "90",
+    genre: "Soulslike, Action RPG, Dark Fantasy",
+    releaseDate: "September 22, 2011",
+    summary: "Dark Souls is a brutally challenging RPG known for its deep lore, strategic combat, and unforgiving difficulty.",
+    globalRating: "*87*"
+  },
+  "Death Stranding": {
+    src: death,
+    price: "40",
+    genre: "Action-Adventure, Open-World, Story-Driven",
+    releaseDate: "November 8, 2019",
+    summary: "In Death Stranding, players control Sam Porter Bridges as he navigates a post-apocalyptic America, delivering cargo and reconnecting a fractured society.",
+    globalRating: "85*"
+  },
+  "The Legend of Zelda": {
+    src: zelda,
+    price: "70",
+    genre: "Action-Adventure, Open-World, Fantasy",
+    releaseDate: "March 3, 2017",
+    summary: "The Legend of Zelda is an iconic adventure series where players take on the role of Link, exploring vast worlds, solving puzzles, and battling foes.",
+    globalRating: "97*"
+  },
+  "Metro Exodus": {
+    src: metro,
+    price: "90",
+    genre: "First-Person Shooter, Survival Horror, Post-Apocalyptic",
+    releaseDate: "February 15, 2019",
+    summary: "The Metro series is set in a post-apocalyptic world where players survive in underground tunnels and battle both mutated creatures and hostile factions.",
+    globalRating: "83*"
+  },
+  "Control": {
+    src: control,
+    price: "30",
+    genre: "Action-Adventure, Supernatural, Third-Person Shooter",
+    releaseDate: "August 27, 2019",
+    summary: "Control follows Jesse Faden as she explores the mysterious Federal Bureau of Control, wielding supernatural abilities and uncovering dark secrets.",
+    globalRating: "85*"
+  },
+  "The Last of Us Part II": {
+    src: last,
+    price: "80",
+    genre: "Action-Adventure, Survival, Story-Rich",
+    releaseDate: "June 14, 2013)",
+    summary: "The Last of Us is a post-apocalyptic survival story following Joel and Ellie as they navigate a dangerous world filled with infected and hostile survivors.",
+    globalRating: "95*"
+  },
+  "Ghost of Tsushima": {
+    src: tsushima,
+    price: "40",
+    genre: "Action-Adventure, Open-World, Samurai",
+    releaseDate: "July 17, 2020",
+    summary: "Ghost of Tsushima follows Jin Sakai, a samurai who must adapt to guerrilla warfare to fight off the Mongol invasion of Japan.",
+    globalRating: "88*"
+  },
+"Sifu": {
+    src: sifu,
+    price: "40",
+    genre: "Action, Martial Arts",
+    releaseDate: "February 8, 2022",
+    summary: "Sifu is a fast-paced action game where players take on the role of a young kung fu student seeking revenge, using precise combat and aging mechanics to master their skills.",
+    globalRating: "81*"
 }
 };
 function Layout(){

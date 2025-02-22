@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
+import ImgSlider from './Slider';
 import { useNavigate } from "react-router-dom";
 import elden from '../Pictures/elden.jpg'
 import plague from '../Pictures/plague.jpg'
@@ -27,7 +28,7 @@ import zelda from '../Pictures/zelda.jpg'
 import './Explore.css'
 function Explore(){
     const Pics = [
-        { src: elden, name: "elden", genre: '"Souls-like", "Open World", "Dark Fantasy", "RPG"' },
+        { src: elden, name: "Elden Ring", genre: '"Souls-like", "Open World", "Dark Fantasy", "RPG"' },
         { src: sekiro, name: "Sekiro", genre: '"Souls-like", "Action", "Adventure", "Stealth"' },
         { src: vampyr, name: "vampyr", genre: '"RPG", "Vampire", "Dark Fantasy", "Narrative-Driven"' },
         { src: plague, name: "A Plague Tale", genre: '"Adventure", "Stealth", "Story-Driven", "Historical"' }
@@ -42,25 +43,32 @@ function Explore(){
     }, []);
     const souls = [
         {name:"vampyr", price:"30"},
-        {name:"dark souls", price:"30"},
-        {name:"elden    ", price:"30"},
-        {name:"sekiro", price:"30"}
+        {name:"Dark Souls 3", price:"30"},
+        {name:"Elden Ring", price:"30"},
+        {name:"Sifu", price:"30"},
+        {name:"Sekiro", price:"30"}
     ]
     const rpg = [
         {name:"The Witcher 3", price:"30"},
         {name:"Cyberpunk 2077", price:"30"},
         {name:"Fallout 4", price:"30"},
+        {name:"The Legend of Zelda", price:"30"},
+        {name:"Starfield", price:"30"},
+        {name:"Dragon Quest XI", price:"30"},
         {name:"Final Fantasy VII Remake", price:"30"}
     ]
     const action = [
         {name:"Red Dead Redemption", price:"30"},
         {name:"Assassin's Creed", price:"30"},
         {name:"God of War", price:"30"},
-        {name:"Horizon Zero Dawn", price:"30"}
+        {name:"Horizon Zero Dawn", price:"30"},
+        {name:"Death Stranding", price:"30"},
+        {name:"A Plague Tale", price:"30"},
+        {name:"Far Cry 5", price:"30"}
+
     ]
     const navigate = useNavigate();
     return(
-        
         <div id="main">
             <div className='News'>
                 <div className='Big'>
@@ -80,7 +88,7 @@ function Explore(){
                             key={index} 
                             src={pic.src} 
                             width="300" 
-                            onClick={() => {SetImage(index); navigate(`/explore/${pic.name}`);}}
+                            onClick={() => {SetImage(index);}}
                         />
                     ))}
                 </div>

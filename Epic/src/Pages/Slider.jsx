@@ -27,22 +27,23 @@ import zelda from '../Pictures/zelda.jpg'
 import { useNavigate } from "react-router-dom";
 import './Slide.css'
 
-const Example = () => {
+const ImgSlider = () => {
     const navigate = useNavigate();
       const cards = [
           { src:rrd,name: "Red Dead Redemption", price: "$59.99" },
           { src:witcher,name: "The Witcher 3", price: "$39.99" },
+          { src:elden,name: "Elden Ring", price: "$39.99" },
           { src:ass,name: "Assassin's Creed", price: "$49.99" },
           { src:gow,name: "God of War", price: "$39.99" },
           { src:horizon,name: "Horizon Zero Dawn", price: "$29.99" },
-          { src:gta,name: "Grand Thief Auto 5", price: "$39.99" },
+          { src:gta,name: "Grand Thift Auto 5", price: "$39.99" },
           { src:farr,name: "Far Cry 5", price: "$29.99" },
           { src:cp,name: "Cyberpunk 2077", price: "$59.99" },
           { src:fallout,name: "Fallout 4", price: "$19.99" },
           { src:rs,name: "Resident Evil 7", price: "$59.99" },
           { src:ds,name: "Dark Souls 3", price: "$29.99" },
           { src:death,name: "Death Stranding", price: "$39.99" },
-          { src:zelda,name: "The Legend of Zelda: Breath of the Wild", price: "$59.99" },
+          { src:zelda,name: "The Legend of Zelda", price: "$59.99" },
           { src:metro,name: "Metro Exodus", price: "$49.99" },
           { src:monster,name: "Monster Hunter: World", price: "$39.99" },
           { src:final,name: "Final Fantasy VII Remake", price: "$59.99" },
@@ -52,11 +53,12 @@ const Example = () => {
       ];
     return (
         <div>
-            <Slide slidesToScroll={1} slidesToShow={9} indicators={true} id="imghold">
+          <h2 style={{position:"relative", left:"10%"}}><span id="subtitle">Discover more</span></h2>
+            <Slide slidesToScroll={2} slidesToShow={7} indicators={true} id="imghold">
               {cards.map((c, index) => (<div className="hov" ><img key={index} src={c.src} alt={c.name} width="240" height="400" onClick={() => navigate(`/explore/${c.name}`)} /><p>{c.name}</p><p>{c.price}</p></div>))}
             </Slide>
         </div>
     );
 };
 
-export default Example;
+export default ImgSlider;

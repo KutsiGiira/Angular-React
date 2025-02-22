@@ -7,9 +7,6 @@
     margin-right: auto;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#main{
-  background-color: #E2E2B6;
-}
 .Side{
     display: flex;
     flex-direction: column;
@@ -18,14 +15,13 @@
 img{
     border-radius: 10px; 
 }
-.Big img {
+.Big{
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 20px;  
+    border-radius: 20px;
 }
-
 .timer {
     height: 100%;
     width: 0;
