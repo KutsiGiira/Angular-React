@@ -13,8 +13,9 @@ const [pos, setPos] = useState({x: 50, y: 50})
   }
   return (
     <>
-        <button onMouseEnter={Hover} onMouseLeave={Left} style={{position: "absolute" , left: `${pos.x}%`, top:`${pos.y}%`}}><h1>Hover me</h1></button>
-        <button  style={{position: "fixed" , left: "45%", top: "45%"}} onClick={() => alert("Clicked")}><h1>Click Me</h1></button>
+    <h1 style={{position: "absolute" , left: "40%"}} >Do u love me ? </h1>
+        <button onMouseEnter={Hover} onMouseLeave={Left} style={{position: "absolute" , left: `${pos.x}%`, top:`${pos.y}%`}}><h1>no</h1></button>
+        <button  style={{position: "fixed" , left: "45%", top: "45%"}} onClick={() => alert("good boy")}><h1>Yes</h1></button>
     </>
   )
 }
