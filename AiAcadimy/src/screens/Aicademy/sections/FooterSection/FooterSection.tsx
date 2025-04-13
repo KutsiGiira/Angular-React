@@ -34,8 +34,8 @@ export const FooterSection = (): JSX.Element => {
   ];
 
   return (
-    <footer className="w-full bg-[#101820] py-16">
-      <div className="container mx-auto px-4">
+    <footer className="w-full mx-0 bg-[#101820] py-16">
+      <div className="w-full px-0">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Logo section */}
           <div className="flex flex-col space-y-4">
