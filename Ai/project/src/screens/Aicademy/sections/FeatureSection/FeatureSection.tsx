@@ -21,8 +21,8 @@ export const FeatureSection = (): JSX.Element => {
         {/* Section description */}
         <p className="font-['Poppins',Helvetica] font-normal text-neutral-700 text-lg text-center tracking-[0] leading-7">
           Aicademy is a fully customizable white-label LMS (Learning Management
-          System) enhanced with advanced AI features. Whether you&#39;re
-          onboarding new hires, upskilling teams, or training clients, Aicademy
+          System)<br></br> enhanced with advanced AI features. Whether you&#39;re
+          onboarding new hires, upskilling<br></br> teams, or training clients, Aicademy
           helps you deliver content efficiently and intelligently.
         </p>
       </div>

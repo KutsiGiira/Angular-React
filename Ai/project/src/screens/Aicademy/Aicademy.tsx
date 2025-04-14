@@ -7,7 +7,7 @@ import { HeroSection } from "./sections/HeroSection";
 import { MainContentSection } from "./sections/MainContentSection";
 import { NotificationFormSection } from "./sections/NotificationFormSection/NotificationFormSection";
 import { ImageHeader } from "./sections/imageheader/imageheader";
-import { NotifiedForm } from './sections/Notifiedform/notifiedform';
+// import { NotifiedForm } from './sections/Notifiedform/notifiedform';
 
 export const Aicademy = (): JSX.Element => {
   return (
@@ -29,7 +29,7 @@ export const Aicademy = (): JSX.Element => {
         {/* Notification form section with background effects */}
         <NotificationFormSection />
 
-        <NotifiedForm /> 
+        {/* <NotifiedForm />  */}
 
         {/* About section */}
         <AboutSection />

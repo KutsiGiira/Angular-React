@@ -70,7 +70,7 @@ export const HeaderSection = (): JSX.Element => {
 
           {/* CTA Button */}
           <Button className="inline-flex items-center gap-2 px-5 py-0 bg-[#8958fe] hover:bg-[#8958fe]/90 rounded-[10px]">
-            <span className="font-['Poppins',Helvetica] font-semibold text-white text-sm tracking-[0] leading-5 whitespace-nowrap">
+            <span className="font-['Poppins',Helvetica] font-light text-white text-sm tracking-[0] leading-5 whitespace-nowrap ">
               Get Notified
             </span>
           </Button>

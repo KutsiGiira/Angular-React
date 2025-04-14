@@ -1,1 +1,0 @@
-export { Aicademy } from "./Aicademy";

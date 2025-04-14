@@ -5,22 +5,19 @@ export const HeroSection = (): JSX.Element => {
   return (
     <section className="flex flex-col w-full items-center gap-6 py-16 px-4">
       <div className="flex w-full items-start justify-center">
-        <h1 className="font-['Poppins',Helvetica] font-semibold text-5xl text-center leading-[72px] tracking-tight max-w-4xl">
-          <span className="text-[#18191b]">The </span>
-          <span className="text-[#8958fe]">AI Era</span>
-          <span className="text-[#18191b]">
-            {" "}
-            is here, upskill yourself and your team to stay in the game
-          </span>
-        </h1>
+      <h1 className="font-['Poppins',Helvetica] font-semibold text-5xl text-center leading-[1.5] max-w-3xl mx-auto">
+  <span className="text-[#18191b]">Your </span>
+  <span className="text-[#8958fe]">AI Augmented LMS</span><br />
+  <span className="text-[#18191b]">for a Future–Ready Workforce</span>
+</h1>
+
       </div>
 
       <div className="text-center w-full">
         <p className="font-['Poppins',Helvetica] font-normal text-[#18191b] text-xl leading-7">
-          Empower Your Team with AI-Driven Learning
-          <br />
-          Custom LMS for modern businesses. Powered by advanced AI.
-        </p>
+        Bridge the skills gap with a future-proof platform.
+        <br />
+        <span className="font-bold">AICademy</span> transforms traditional LMS tools into intelligent, adaptive learning ecosystems.</p>
       </div>
 
       <Button
@@ -28,7 +25,7 @@ export const HeroSection = (): JSX.Element => {
         className="h-12 px-5 rounded-[10px] border-2 border-[#081d3f] bg-transparent"
       >
         <span className="font-['Poppins',Helvetica] font-medium text-[#081d3f] text-lg">
-          Get Notified
+          Book a Demo
         </span>
       </Button>
     </section>

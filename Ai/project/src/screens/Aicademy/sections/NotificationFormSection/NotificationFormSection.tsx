@@ -8,31 +8,31 @@ export const NotificationFormSection = (): JSX.Element => {
       id: 1,
       title: "White-Label & Fully Customizable",
       description:
-        "Your branding, your rules. Aicademy adapts to your company's style, tone, and structure — no coding required.",
+        "Your branding, your rules. Aicademy adapts to your company’s style, tone, and structure — no coding required.",
     },
     {
       id: 2,
-      title: "Real-Time Collaboration",
+      title: "AI-Powered Learning Journeys",
       description:
-        "Work seamlessly with your team with real-time feedback and updates on content and structure.",
+        "Deliver adaptive, personalized paths that evolve with learner progress, goals, and skills — for smarter engagement at scale.",
     },
     {
       id: 3,
-      title: "Advanced Analytics",
+      title: "Automated Content Generation",
       description:
-        "Track engagement, feedback, and performance with our built-in analytics tools.",
+        "Create structured lessons, dynamic quizzes, and training flows in minutes using AI — faster launches, better experiences.",
     },
     {
       id: 4,
-      title: "AI-Powered Assistance",
+      title: "Interactive AI Coaches & Avatars",
       description:
-        "Leverage AI to draft, edit, and enhance your content without lifting a finger.",
+        "Boost engagement with virtual mentors that support, guide, and simulate real-world conversations or training scenarios.",
     },
     {
       id: 5,
-      title: "Secure and Compliant",
+      title: "AI Augmented Analytics & ROI Tracking",
       description:
-        "We ensure data privacy and full compliance with industry standards and regulations.",
+        "Monitor training impact, identify skill gaps, and prove value with real-time dashboards and actionable learning insights.",
     },
   ];
 

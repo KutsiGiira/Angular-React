@@ -70,7 +70,7 @@ export const FooterSection = (): JSX.Element => {
           {/* Navigation columns for desktop */}
           {footerLinks.map((column, index) => (
             <div key={index} className="flex flex-col">
-              <h3 className="font-semibold text-[#46b8ff] text-base leading-6 mb-6 font-['Poppins',Helvetica] tracking-[0]">
+              <h3 className="font-medium text-[#46b8ff] text-base leading-6 mb-6 font-['Poppins',Helvetica] tracking-[0]">
                 {column.title}
               </h3>
               <div className="flex flex-col space-y-4">
@@ -78,7 +78,7 @@ export const FooterSection = (): JSX.Element => {
                   <a
                     key={linkIndex}
                     href="#"
-                    className="font-medium text-white text-sm leading-6 whitespace-nowrap font-['Poppins',Helvetica] tracking-[0] hover:text-[#46b8ff] transition-colors"
+                    className="font-light text-white text-sm leading-6 whitespace-nowrap font-['Poppins',Helvetica] tracking-[0] hover:text-[#46b8ff] transition-colors"
                   >
                     {link}
                   </a>

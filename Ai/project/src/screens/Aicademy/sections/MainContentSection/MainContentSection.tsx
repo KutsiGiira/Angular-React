@@ -23,13 +23,13 @@ export const MainContentSection = (): JSX.Element => {
             </p>
 
             {/* Heading */}
-            <h2 className="font-['Poppins',Helvetica] font-medium text-[#18191b] text-4xl text-center leading-10 w-full max-w-[480px]">
+            <h2 className="font-['Poppins',Helvetica] font-medium text-[#18191b] text-4xl text-center leading-10 w-full max-w-[900px]">
               Ready to Build Your AI-Powered Academy?
             </h2>
 
             {/* CTA Button */}
             <Button className="w-[352px] h-[50px] bg-[#8958fe] rounded-[10px] font-['Poppins',Helvetica] font-semibold text-white text-sm">
-              Get Notified
+              Book a Demo
             </Button>
           </CardContent>
         </Card>
