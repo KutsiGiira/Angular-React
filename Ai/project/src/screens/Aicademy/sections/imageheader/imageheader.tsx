@@ -20,4 +20,3 @@ export const ImageHeader = (): JSX.Element => {
     </div>
   );
 };
-
