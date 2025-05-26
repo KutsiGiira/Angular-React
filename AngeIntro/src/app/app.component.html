@@ -1,3 +1,5 @@
 <h1>Navbar lol</h1>
+<p>{{ Message }}</p>
 <app-navbar [NavMess]="nMessage"></app-navbar>
-<app-post [parent] = "pMessage"></app-post>
+<app-post [Parent] = "pMessage" (messageEvent) = "receiveMessage($event)"></app-post>
+<p>{{ fromChildOutput }}</p>
