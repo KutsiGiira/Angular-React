@@ -4,7 +4,7 @@ import { FormComponent } from "./form/form.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormComponent],
+  imports: [FormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

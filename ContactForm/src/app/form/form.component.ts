@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [ReactiveFormsModule], 
+  imports: [ReactiveFormsModule, CommonModule], 
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
 export class FormComponent {
   form!: FormGroup;
+  min:string | undefined;
 
   constructor(private fb: FormBuilder) {
     this.createForm();
@@ -17,7 +18,7 @@ export class FormComponent {
 
   createForm() {
     this.form = this.fb.group({
-      name: ['', Validators.required],
+      username: ['', [Validators.required, Validators.minLength(2)]],
       password: ['', [Validators.required, Validators.minLength(8)]],
     });
   }
@@ -25,8 +26,15 @@ export class FormComponent {
   onSubmit() {
     if (this.form.valid) {
       console.log(this.form.value);
-    } else {
-      alert("Please fill out the form correctly!");
     }
-  }
+    else {
+          const pass = this.form.get('password')?.value;
+      if(pass.length < 8){
+          this.min = 'length cant be less 8'
+      }
+      else{
+        this.min = "please enter password"
+      }
+    }
+    }
 }

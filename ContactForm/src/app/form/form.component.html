@@ -1,8 +1,14 @@
 <div class="bg-white">
     <form [formGroup]="form" (ngSubmit) = "onSubmit()">
         <div class="flex flex-col gap-4">
+            <div *ngIf="form.get('username')?.invalid && form.get('username')?.touched" class="text-red-800 bg-red-300 p-2">
+            Name is required.
+            </div>
+            <div *ngIf="form.get('password')?.invalid && form.get('password')?.touched" class="text-red-800 bg-red-300 p-2">
+            {{min}}
+            </div>
           <label for="username">Username</label>
-            <input type="text" formControlName="name">
+            <input type="text" formControlName="username" placeholder="enter username" autofocus>
             <label for="password">Password</label>
             <input type="password" formControlName="password">
             <button type="submit" class="bg-red-300 text-white cursor-pointer hover:bg-red-600">Submit</button>
