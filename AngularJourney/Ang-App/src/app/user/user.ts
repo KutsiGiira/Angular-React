@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { DUMMY_USERS } from './dummy-users';
 
 
@@ -11,9 +11,8 @@ const RandIndex = Math.floor(Math.random() * DUMMY_USERS.length)
 })
 export class User {
   selectedUser = DUMMY_USERS[RandIndex]
+  @Input({required: true}) name!: string;
 
   onSelectUser(){
-    const RandIndex = Math.floor(Math.random() * DUMMY_USERS.length)
-    this.selectedUser = DUMMY_USERS[RandIndex]
   }
 }
